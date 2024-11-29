@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0a0a0a;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: #121212;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+    font-size: 1.8em;
+    font-family: 'Courier New', monospace;
+    color: #00ff99;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1.5em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #e0e0e0;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #00ff99;
+}
+
+.home {
+    text-align: center;
+    padding: 5em 2em;
+}
+
+.intro {
+    font-size: 2em;
+    font-family: 'Courier New', monospace;
+    color: #00ff99;
+    animation: typewriter 2s steps(22) 1s forwards;
+    overflow: hidden;
+    border-right: 0.15em solid #00ff99;
+    white-space: nowrap;
+}
+
+.description {
+    font-size: 1.2em;
+    margin-top: 1em;
+    max-width: 600px;
+    margin: 2em auto;
+    line-height: 1.8;
+    color: #d0d0d0;
+}
+
+a:hover {
+    color: #ff3333;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.2) 30%, transparent 30%);
+    background-size: 100px 100px;
+    background-position: center;
+    transition: background 0.3s;
+}
+
+@keyframes typewriter {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+.section {
+    padding: 3em 2em;
+    max-width: 800px;
+    margin: auto;
+}
+
+h2 {
+    color: #00ff99;
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 1em;
+    border-bottom: 1px solid #444;
+}
+
+.table th {
+    color: #00ff99;
+    text-align: left;
+}
+
+.table td {
+    color: #d0d0d0;
+}
+
+button, a {
+    color: #00ff99;
+    background: none;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+button:hover, a:hover {
+    color: #ff3333;
+}
+
+.experience-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    justify-content: space-between;
+}
+
+.experience-box {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 calc(50% - 1.5em);
+    max-width: calc(50% - 1.5em);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.company-logo {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 1em;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 2px solid #00ff99;
+}
+
+.experience-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.experience-details h3 {
+    font-size: 1.4em;
+    color: #00ff99;
+    margin-bottom: 0.2em;
+}
+
+.experience-details p {
+    font-size: 1em;
+    color: #d0d0d0;
+    margin-bottom: 0.5em;
+}
+
+.experience-details p strong {
+    color: #00ff99;
+}
+
+.about {
+    padding: 3em 2em;
+    max-width: 800px;
+    margin: auto;
+}
+
+h3 {
+    color: #00ff99;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.photo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em 0;
+}
+
+.profile-photo {
+    width: 100%;
+    max-width: 500px;
+    aspect-ratio: 1 / 1;
+    border-radius: 12px;
+    border: 2px solid #00ff99;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.intro-container {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.contact {
+    padding: 3em 2em;
+    max-width: 600px;
+    margin: 2em auto;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.contact .intro {
+    font-size: 2em;
+    color: #00ff99;
+    margin-bottom: 0.5em;
+}
+
+.contact .description {
+    color: #d0d0d0;
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+}
+
+.contact-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.contact-item {
+    padding: 1em;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background-color: #2a2a2a;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.contact-item h3 {
+    color: #00ff99;
+    font-size: 1.4em;
+    margin-bottom: 0.5em;
+}
+
+.contact-item p a {
+    font-size: 1.2em;
+    color: #e0e0e0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-item p a:hover {
+    color: #00ff99;
+    text-decoration: underline;
+}
+
+.download-resume {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.resume-button {
+    display: inline-block;
+    padding: 0.8em 1.5em;
+    background-color: #00ff99;
+    color: #0a0a0a;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.resume-button:hover {
+    background-color: #00cc7a;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .intro {
+        font-size: 8vw;
+    }
+    .experience-box {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+        margin-top: 1em;
+    }
+
+    nav ul li {
+        margin: 0.5em 0;
+    }
+
+    .intro {
+        font-size: 10vw;
+        white-space: normal;
+    }
+
+    .section {
+        padding: 2em 1em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .description {
+        font-size: 1em;
+    }
+
+    button, a {
+        font-size: 0.9em;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 2em;
+    font-size: 0.8em;
+    color: #888;
+    background-color: #121212;
+}
